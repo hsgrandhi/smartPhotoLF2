@@ -9,7 +9,7 @@ from requests_aws4auth import AWS4Auth
 credentials = boto3.Session().get_credentials()
 authent = AWS4Auth(credentials.access_key, credentials.secret_key, 'us-west-2', 'es', session_token=credentials.token)
 
-#check
+#check pipeline
 # function to handle the lambda function
 def lambda_handler(event, context):
     print(event)

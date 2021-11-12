@@ -20,7 +20,6 @@ Resources:
       Code:
         S3Bucket: smartphotofrontend
         S3Key: lf2.zip
-      # CodeUri: s3://smartphotofrontend/lf2.zip
       Handler: lambda_function.lambda_handler
       FunctionName: search-photos
       Role: 'arn:aws:iam::493645893741:role/service-role/search-photos-role-cd73n5tm'
